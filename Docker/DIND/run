@@ -1,0 +1,1 @@
+docker run -d  --name dind  --privileged  sva7777/dind

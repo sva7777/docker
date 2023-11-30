@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  runner:
+    image: gitlab/gitlab-runner:ubuntu-v15.5.2
+    container_name: runner
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - './gitlab/gitlab-runner:/etc/gitlab-runner'
+    networks:
+      - gitlab
+
+networks:
+  gitlab:
+    name: gitlab-network

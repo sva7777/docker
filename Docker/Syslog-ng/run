@@ -1,0 +1,1 @@
+docker run -d -p 514:514/udp -p 601:601  --name syslog-container -p 8080:80 sva7777/syslog-ng -edv

@@ -1,0 +1,1 @@
+docker build -t sva7777/dind .
