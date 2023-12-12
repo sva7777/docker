@@ -1,5 +1,5 @@
 {
   "NotebookApp": {
-    "password": "sha1:b566c81faac9:e06f750138b48ad9dc99a390e51332d461effedc"
+    "password": "argon2:$argon2id$v=19$m=10240,t=10,p=8$75OBnf+WglQCqvUqCrR5wg$eYoCHfp8B3yoZG8sYA2Pav5WcLP5KLZfhYxLmMuZpkI"
   }
 }
