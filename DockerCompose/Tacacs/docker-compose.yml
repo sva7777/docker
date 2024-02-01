@@ -1,0 +1,18 @@
+version: '3'
+
+
+networks:
+    tacacs-net:
+        driver: bridge
+
+services:
+    tacacs:
+        image: dchidell/docker-tacacs
+        container_name: tacacs
+        volumes:
+            - ./config:/etc/tac_plus/
+        restart: unless-stopped
+        ports:
+            - "49:49"
+        networks:
+            - tacacs-net
